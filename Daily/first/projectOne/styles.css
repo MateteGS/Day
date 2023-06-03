@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Rubik+Puddles&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    --rubik: 'Rubik Puddles', cursive;
+}
+
+body {
+   background:linear-gradient(90deg,rgb(87, 2, 87),rgb(23, 2, 65)); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.container {
+    width: 50%;
+    box-shadow: 2px 3px 8px white;
+    padding: 1rem;
+    background: linear-gradient(90deg,white,gray,black);
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 8rem;
+    padding-bottom: 1rem;
+
+    color: rgb(168, 160, 160);
+    text-shadow: 2px 5px black;
+}
+
+span {
+   font-family: var(--rubik);
+   color: blue
+}
+
+P {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(35, 35, 247);
+    box-shadow: 5px 10px 15px whitesmoke;
+    opacity: 0.6;
+    animation: rot 5s infinite;
+}
+
+@keyframes rot {
+    0% {
+        rotateY: 360deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+.one {
+    top: 20px;
+    left: 0;
+}
+
+.two {
+    bottom: 0;
+    right: 0;
+}
+
+.circlet {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 10px 23px 65px rgba(230, 230, 230,0.3);
+    border: 2px solid white;
+    opacity: 0.4;
+}
+
+.three {
+    top: 100px;
+    left: 94rem;
+}
+
+.four {
+    left: 28rem;
+    bottom: 9rem;
+}
