@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+}
+
+.one {
+    top: 2rem;
+    left: 2rem;
+    box-shadow: inset 2px 2px 50px white;
+    border-radius: 20px;
+}
+
+.two {
+    top: 2rem;
+    right: 2rem;
+    box-shadow: inset 2px 2px 50px white;
+    border-radius: 20px;
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(90deg,yellow,orange);
+    border-radius: 50%;
+    filter: blur(1px);
+    top: 30%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 150px 150px 40px rgb(0, 0, 0),-150px 150px 40px rgb(0, 0, 0),150px -150px 40px rgb(0, 0, 0),-150px -150px 40px red;
+    animation: roundAbout 2s infinite;
+}
+
+@keyframes roundAbout {
+    0%{
+        transform: rotateX(360deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.inner {
+    width: 140px;
+    height: 140px;
+    background-color: darkorange;
+    border-radius: 50%;
+    filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerChild {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50%;
+    filter: blur(4px);
+}
+
+.three {
+    bottom: 5%;
+    left: 5%;
+    box-shadow: inset -15px 20px 50px white;
+    border-top-right-radius: 55%;
+}
+
+.four {
+    bottom: 5%;
+    right: 5%;
+    box-shadow: inset 15px 20px 50px white;
+    border-top-left-radius: 55%;
+}
